@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <script type="text/javascript">
+    var fallback_url = "https://play.google.com/store/apps/details?id=com.example.flutter_dynamic_link_app";
+    var androidAppUrl = "yourapp://"; // Replace with your app scheme
+    window.location = androidAppUrl;
+    setTimeout(function() {
+      window.location = fallback_url;
+    }, 500);
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
